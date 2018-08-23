@@ -2039,6 +2039,208 @@ if !exists('cpp_no_boost')
     syntax keyword cppSTLcast lexical_cast
 endif
 
+" Qt extensions
+"if exists('g:cpp_no_qt') && g:cpp_no_qt
+    "syntax keyword cppType
+
+    " Qt defines
+    syntax keyword cppQTconstant Q_OBJECT
+    syntax keyword cppQTconstant Q_PROPERTY
+    syntax keyword cppQTconstant READ
+    syntax keyword cppQTconstant WRITE
+    syntax keyword cppQTconstant NOTIFY
+    syntax keyword cppQTconstant MEMBER
+    syntax keyword cppQTconstant RESET
+    syntax keyword cppQTconstant REVISION
+    syntax keyword cppQTconstant DESIGNABLE
+    syntax keyword cppQTconstant SCRIPTABLE
+    syntax keyword cppQTconstant STORED
+    syntax keyword cppQTconstant USER
+    syntax keyword cppQTconstant CONSTANT
+    syntax keyword cppQTconstant FINAL
+
+    syntax keyword cppQTconstant Q_SIGNAL
+    syntax keyword cppQTconstant Q_SLOT
+
+    " Qt Signals
+    syntax keyword cppQTaccess signals
+    syntax keyword cppQTaccess Q_SIGNALS
+    syntax keyword cppQTaccess slots
+    syntax keyword cppQTaccess Q_SLOTS
+    syntax keyword cppQTstatement emit
+
+    " Qt types
+    syntax keyword cppQTtype QObject
+    syntax keyword cppQTtype QString
+    syntax keyword cppQTtype QByteArray
+    syntax keyword cppQTtype QTimer
+
+    " Qt widgets
+    syntax keyword cppQTtype QComboBox
+    syntax keyword cppQTtype QCommandLinkButton
+    syntax keyword cppQTtype QDateEdit
+    syntax keyword cppQTtype QDateTimeEdit
+    syntax keyword cppQTtype QDial
+    syntax keyword cppQTtype QDoubleSpinBox
+    syntax keyword cppQTtype QFocusFrame
+    syntax keyword cppQTtype QFontComboBox
+    syntax keyword cppQTtype QLCDNumber
+    syntax keyword cppQTtype QLabel
+    syntax keyword cppQTtype QLineEdit
+    syntax keyword cppQTtype QMenu
+    syntax keyword cppQTtype QProgressBar
+    syntax keyword cppQTtype QPushButton
+    syntax keyword cppQTtype QRadioButton
+    syntax keyword cppQTtype QScrollArea
+    syntax keyword cppQTtype QScrollBar
+    syntax keyword cppQTtype QSizeGrip
+    syntax keyword cppQTtype QSlider
+    syntax keyword cppQTtype QSpinBox
+    syntax keyword cppQTtype QTabBar
+    syntax keyword cppQTtype QTabWidget
+    syntax keyword cppQTtype QTimeEdit
+    syntax keyword cppQTtype QToolBox
+    syntax keyword cppQTtype QToolButton
+    syntax keyword cppQTtype QWidget
+    syntax keyword cppQTtype QCalendarWidget
+    syntax keyword cppQTtype QColumnView
+    syntax keyword cppQTtype QDataWidgetMapper
+    syntax keyword cppQTtype QListView
+    syntax keyword cppQTtype QMacCocoaViewContainer
+    syntax keyword cppQTtype QMacNativeWidget
+    syntax keyword cppQTtype QTableView
+    syntax keyword cppQTtype QTreeView
+    syntax keyword cppQTtype QUndoView
+    syntax keyword cppQTtype QAbstractButton
+    syntax keyword cppQTtype QAbstractScrollArea
+    syntax keyword cppQTtype QAbstractSlider
+    syntax keyword cppQTtype QAbstractSpinBox
+    syntax keyword cppQTtype QDialog
+    syntax keyword cppQTtype QFrame
+    syntax keyword cppQTtype QButtonGroup
+    syntax keyword cppQTtype QGroupBox
+    syntax keyword cppQTtype QSplitter
+    syntax keyword cppQTtype QSplitterHandle
+    syntax keyword cppQTtype QStackedWidget
+    syntax keyword cppQTtype QTabWidget
+    syntax keyword cppQTtype QAbstractGraphicsShapeItem
+    syntax keyword cppQTtype QGraphicsAnchor
+    syntax keyword cppQTtype QGraphicsAnchorLayout
+    syntax keyword cppQTtype QGraphicsEffect
+    syntax keyword cppQTtype QGraphicsEllipseItem
+    syntax keyword cppQTtype QGraphicsGridLayout
+    syntax keyword cppQTtype QGraphicsItem
+    syntax keyword cppQTtype QGraphicsItemGroup
+    syntax keyword cppQTtype QGraphicsLayout
+    syntax keyword cppQTtype QGraphicsLayoutItem
+    syntax keyword cppQTtype QGraphicsLineItem
+    syntax keyword cppQTtype QGraphicsLinearLayout
+    syntax keyword cppQTtype QGraphicsObject
+    syntax keyword cppQTtype QGraphicsPathItem
+    syntax keyword cppQTtype QGraphicsPixmapItem
+    syntax keyword cppQTtype QGraphicsPolygonItem
+    syntax keyword cppQTtype QGraphicsProxyWidget
+    syntax keyword cppQTtype QGraphicsRectItem
+    syntax keyword cppQTtype QGraphicsScene
+    syntax keyword cppQTtype QGraphicsSceneContextMenuEvent
+    syntax keyword cppQTtype QGraphicsSceneDragDropEvent
+    syntax keyword cppQTtype QGraphicsSceneEvent
+    syntax keyword cppQTtype QGraphicsSceneHelpEvent
+    syntax keyword cppQTtype QGraphicsSceneHoverEvent
+    syntax keyword cppQTtype QGraphicsSceneMouseEvent
+    syntax keyword cppQTtype QGraphicsSceneMoveEvent
+    syntax keyword cppQTtype QGraphicsSceneResizeEvent
+    syntax keyword cppQTtype QGraphicsSceneWheelEvent
+    syntax keyword cppQTtype QGraphicsSimpleTextItem
+    syntax keyword cppQTtype QGraphicsSvgItem
+    syntax keyword cppQTtype QGraphicsTextItem
+    syntax keyword cppQTtype QGraphicsTransform
+    syntax keyword cppQTtype QGraphicsView
+    syntax keyword cppQTtype QGraphicsWidget
+    syntax keyword cppQTtype QStyleOptionGraphicsItem
+    syntax keyword cppQTtype QAbstractItemDelegate
+    syntax keyword cppQTtype QAbstractItemModel
+    syntax keyword cppQTtype QAbstractItemView
+    syntax keyword cppQTtype QAbstractListModel
+    syntax keyword cppQTtype QAbstractProxyModel
+    syntax keyword cppQTtype QAbstractTableModel
+    syntax keyword cppQTtype QColumnView
+    syntax keyword cppQTtype QDataWidgetMapper
+    syntax keyword cppQTtype QFileSystemModel
+    syntax keyword cppQTtype QHeaderView
+    syntax keyword cppQTtype QIdentityProxyModel
+    syntax keyword cppQTtype QItemDelegate
+    syntax keyword cppQTtype QItemEditorCreator
+    syntax keyword cppQTtype QItemEditorCreatorBase
+    syntax keyword cppQTtype QItemEditorFactory
+    syntax keyword cppQTtype QItemSelection
+    syntax keyword cppQTtype QItemSelectionModel
+    syntax keyword cppQTtype QItemSelectionRange
+    syntax keyword cppQTtype QListView
+    syntax keyword cppQTtype QListWidget
+    syntax keyword cppQTtype QListWidgetItem
+    syntax keyword cppQTtype QModelIndex
+    syntax keyword cppQTtype QPersistentModelIndex
+    syntax keyword cppQTtype QSortFilterProxyModel
+    syntax keyword cppQTtype QStandardItem
+    syntax keyword cppQTtype QStandardItemEditorCreator
+    syntax keyword cppQTtype QStandardItemModel
+    syntax keyword cppQTtype QStringListModel
+    syntax keyword cppQTtype QStyledItemDelegate
+    syntax keyword cppQTtype QTableView
+    syntax keyword cppQTtype QTableWidget
+    syntax keyword cppQTtype QTableWidgetItem
+    syntax keyword cppQTtype QTableWidgetSelectionRange
+    syntax keyword cppQTtype QTreeView
+    syntax keyword cppQTtype QTreeWidget
+    syntax keyword cppQTtype QTreeWidgetItem
+    syntax keyword cppQTtype QTreeWidgetItemIterator
+    syntax keyword cppQTtype QAction
+    syntax keyword cppQTtype QActionGroup
+    syntax keyword cppQTtype QDockWidget
+    syntax keyword cppQTtype QMainWindow
+    syntax keyword cppQTtype QMdiArea
+    syntax keyword cppQTtype QMdiSubWindow
+    syntax keyword cppQTtype QMenu
+    syntax keyword cppQTtype QMenuBar
+    syntax keyword cppQTtype QSizeGrip
+    syntax keyword cppQTtype QStatusBar
+    syntax keyword cppQTtype QToolBar
+    syntax keyword cppQTtype QWidgetAction
+    syntax keyword cppQTtype QColor
+    syntax keyword cppQTtype QCommonStyle
+    syntax keyword cppQTtype QCursor
+    syntax keyword cppQTtype QFont
+    syntax keyword cppQTtype QFontDatabase
+    syntax keyword cppQTtype QFontInfo
+    syntax keyword cppQTtype QGraphicsAnchor
+    syntax keyword cppQTtype QGraphicsAnchorLayout
+    syntax keyword cppQTtype QPalette
+    syntax keyword cppQTtype QStyle
+    syntax keyword cppQTtype QStyleFactory
+    syntax keyword cppQTtype QStyleHintReturn
+    syntax keyword cppQTtype QStyleHintReturnMask
+    syntax keyword cppQTtype QStyleHintReturnVariant
+    syntax keyword cppQTtype QStyleOption
+    syntax keyword cppQTtype QStylePainter
+    syntax keyword cppQTtype QBoxLayout
+    syntax keyword cppQTtype QButtonGroup
+    syntax keyword cppQTtype QFormLayout
+    syntax keyword cppQTtype QGraphicsAnchor
+    syntax keyword cppQTtype QGraphicsAnchorLayout
+    syntax keyword cppQTtype QGridLayout
+    syntax keyword cppQTtype QGroupBox
+    syntax keyword cppQTtype QHBoxLayout
+    syntax keyword cppQTtype QLayout
+    syntax keyword cppQTtype QLayoutItem
+    syntax keyword cppQTtype QSizePolicy
+    syntax keyword cppQTtype QSpacerItem
+    syntax keyword cppQTtype QStackedLayout
+    syntax keyword cppQTtype QStackedWidget
+    syntax keyword cppQTtype QVBoxLayout
+    syntax keyword cppQTtype QWidgetItem
+" endif
+
 
 " Default highlighting
 hi def link cCustomFunc        Function
@@ -2058,6 +2260,12 @@ hi def link cppSTLios          Function
 hi def link cppSTLcast         Statement
 hi def link cppRawString       String
 hi def link cppRawDelimiter    Delimiter
+
+" Qt highlighting
+hi def link cppQTtype          cType
+hi def link cppQTconstant      cppConstant
+hi def link cppQTaccess        cppAccess
+hi def link cppQTstatement     cppStatement
 
 
 " Highlight all standard C++ keywords as Statement
