@@ -2069,11 +2069,30 @@ endif
     syntax keyword cppQTaccess Q_SLOTS
     syntax keyword cppQTstatement emit
 
+    " Misc Qt Types
+    syntax keyword cppQTtype uchar
+
     " Qt types
     syntax keyword cppQTtype QObject
     syntax keyword cppQTtype QString
     syntax keyword cppQTtype QByteArray
     syntax keyword cppQTtype QTimer
+
+    " Qt drawing
+    syntax keyword cppQTtype QPainter
+    syntax keyword cppQTtype QPixmap
+
+    syntax keyword cppQTtype QSize
+    syntax keyword cppQTtype QSizeF
+    syntax keyword cppQTtype QPoint
+    syntax keyword cppQTtype QPointF
+    syntax keyword cppQTtype QLine
+    syntax keyword cppQTtype QLineF
+    syntax keyword cppQTtype QRect
+    syntax keyword cppQTtype QRectF
+
+    " Qt events
+    syntax keyword cppQTtype QPaintEvent
 
     " Qt widgets
     syntax keyword cppQTtype QComboBox
