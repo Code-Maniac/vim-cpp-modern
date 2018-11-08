@@ -2043,6 +2043,9 @@ endif
 "if exists('g:cpp_no_qt') && g:cpp_no_qt
     "syntax keyword cppType
 
+    " Qt namespace
+    syntax keyword cppQTnamespace Qt
+
     " Qt defines
     syntax keyword cppQTconstant Q_OBJECT
     syntax keyword cppQTconstant Q_PROPERTY
@@ -2071,15 +2074,20 @@ endif
 
     " Misc Qt Types
     syntax keyword cppQTtype uchar
+    syntax keyword cppQTtype qreal
 
     " Qt types
     syntax keyword cppQTtype QObject
     syntax keyword cppQTtype QString
+    syntax keyword cppQTtype QStringList
     syntax keyword cppQTtype QByteArray
     syntax keyword cppQTtype QTimer
 
     " Qt drawing
     syntax keyword cppQTtype QPainter
+    syntax keyword cppQTtype QPainterPath
+    syntax keyword cppQTtype QPen
+    syntax keyword cppQTtype QBrush
     syntax keyword cppQTtype QPixmap
 
     syntax keyword cppQTtype QSize
@@ -2093,6 +2101,7 @@ endif
 
     " Qt events
     syntax keyword cppQTtype QPaintEvent
+    syntax keyword cppQTtype QHideEvent
 
     " Qt widgets
     syntax keyword cppQTtype QComboBox
@@ -2260,6 +2269,11 @@ endif
     syntax keyword cppQTtype QWidgetItem
 " endif
 
+" additional type highlighting
+syntax keyword cType char_t
+syntax keyword cType float32_t
+syntax keyword cType float64_t
+syntax keyword cType float128_t
 
 " Default highlighting
 hi def link cCustomFunc        Function
@@ -2285,6 +2299,7 @@ hi def link cppQTtype          cType
 hi def link cppQTconstant      cppConstant
 hi def link cppQTaccess        cppAccess
 hi def link cppQTstatement     cppStatement
+hi def link cppQTnamespace     cppSTLnamespace
 
 
 " Highlight all standard C++ keywords as Statement
