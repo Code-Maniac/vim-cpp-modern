@@ -265,6 +265,35 @@ if exists('g:cpp_simple_highlight') && g:cpp_simple_highlight
     hi! link cLabel        Statement
 endif
 
+" IXXAAT types
+syntax keyword cType IXX_U8
+syntax keyword cType IXX_I8
+syntax keyword cType IXX_U16
+syntax keyword cType IXX_I16
+syntax keyword cType IXX_U32
+syntax keyword cType IXX_I32
+syntax keyword cType IXX_F32
+syntax keyword cType IXX_CHAR
+syntax keyword cType IXX_BOOL
+syntax keyword cBoolean IXX_TRUE IXX_FALSE
+
+syntax keyword cType DLL_t_MSG
+syntax keyword cType DLL_t_OBJ_INT
+syntax keyword cType DLL_t_OBJ
+syntax keyword cType t_DLL
+syntax keyword cType t_DLLMAIN
+syntax keyword cType DLL_t_BIT_TIMING
+syntax keyword cType DLL_t_BAUD_TAB
+syntax keyword cType APL_t_MSG
+syntax keyword cType MEM_t_MSG
+syntax keyword cType ERR_t_ERROR
+syntax keyword cType DIAG_t_DTC
+syntax keyword cType IXX_BOOL
+syntax keyword cType t_OBJ
+
+"socketCAN and ioctl
+syntax keyword cType can_frame
+syntax keyword cType ifreq
 
 " ------------------------------------------------------------------------------
 " Additional optional highlighting

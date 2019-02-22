@@ -2101,7 +2101,13 @@ endif
 
     " Qt events
     syntax keyword cppQTtype QPaintEvent
+    syntax keyword cppQTType QShowEvent
     syntax keyword cppQTtype QHideEvent
+
+    " Qt date and time
+    syntax keyword cppQTtype QDateTime
+    syntax keyword cppQTtype QDate
+    syntax keyword cppQTtype QTime
 
     " Qt widgets
     syntax keyword cppQTtype QComboBox
@@ -2267,6 +2273,9 @@ endif
     syntax keyword cppQTtype QStackedWidget
     syntax keyword cppQTtype QVBoxLayout
     syntax keyword cppQTtype QWidgetItem
+
+    syntax keyword cppQTtype QApplication
+    syntax keyword cppQTtype QGuiApplication
 " endif
 
 " additional type highlighting
@@ -2274,6 +2283,21 @@ syntax keyword cType char_t
 syntax keyword cType float32_t
 syntax keyword cType float64_t
 syntax keyword cType float128_t
+
+" templating
+syntax keyword cType T
+syntax keyword cType T1
+syntax keyword cType T2
+syntax keyword cType T3
+syntax keyword cType TArgs
+
+" R2 namespace
+syntax keyword cppSTLnamespace R2
+syntax keyword cppSTLnamespace AppFramework
+syntax keyword cppSTLnamespace J1939
+syntax keyword cppSTLnamespace Utils
+
+syntax keyword cType Vec2
 
 " Default highlighting
 hi def link cCustomFunc        Function
