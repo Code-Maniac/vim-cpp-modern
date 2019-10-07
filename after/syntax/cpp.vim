@@ -2083,6 +2083,19 @@ endif
     syntax keyword cppQTtype QByteArray
     syntax keyword cppQTtype QTimer
 
+    " Qt containers
+
+    syntax keyword cppQTtype QList
+    syntax keyword cppQTtype QLinkedList
+    syntax keyword cppQTtype QVector
+    syntax keyword cppQTtype QStack
+    syntax keyword cppQTtype QQueue
+    syntax keyword cppQTtype QSet
+    syntax keyword cppQTtype QMap
+    syntax keyword cppQTtype QMultiMap
+    syntax keyword cppQTtype QHash
+    syntax keyword cppQTtype QMultiHash
+
     " Qt drawing
     syntax keyword cppQTtype QPainter
     syntax keyword cppQTtype QPainterPath
@@ -2245,6 +2258,7 @@ endif
     syntax keyword cppQTtype QCommonStyle
     syntax keyword cppQTtype QCursor
     syntax keyword cppQTtype QFont
+    syntax keyword cppQTtype QFontMetrics
     syntax keyword cppQTtype QFontDatabase
     syntax keyword cppQTtype QFontInfo
     syntax keyword cppQTtype QGraphicsAnchor
@@ -2298,6 +2312,11 @@ syntax keyword cppSTLnamespace J1939
 syntax keyword cppSTLnamespace Utils
 
 syntax keyword cType Vec2
+
+" floating point max values
+syntax keyword cppConstant FLOAT32_MAX
+syntax keyword cppConstant FLOAT64_MAX
+syntax keyword cppConstant FLOAT128_MAX
 
 " Default highlighting
 hi def link cCustomFunc        Function
